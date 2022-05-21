@@ -21,10 +21,10 @@ export namespace qstr {
 	}
 	
 	export function parseQ() {
-		return parseSpecificQ(document.location.search);
+		return parseGivenQ(document.location.search);
 	}
 	
-	function parseSpecificQ(queryString: string) {
+	function parseGivenQ(queryString: string) {
 		const dict: Record<string, string> = {};
 		
 		if (queryString.indexOf("?") === 0) {
