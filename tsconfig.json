@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"removeComments": true,
+		"noImplicitAny": true,
+		"preserveConstEnums": true,
+		"target": "esnext",
+		"sourceMap": false,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

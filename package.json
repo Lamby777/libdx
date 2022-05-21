@@ -1,0 +1,17 @@
+{
+	"name": "libdx",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"tsc": "npx tsc -w",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Dexie",
+	"license": "GPLv3",
+	"dependencies": {},
+	"devDependencies": {
+		"typescript": "^4.5.5"
+	}
+}
