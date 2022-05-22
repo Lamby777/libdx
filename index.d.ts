@@ -15,7 +15,9 @@ export declare namespace str {
     function filterStrings(str: string, filtered: string[]): string;
     function filterStringE(str: string, include: string[]): string;
 }
-export declare function shakeElement(element: HTMLElement, time: number, coefficient: number): void;
+export declare namespace elem {
+    function shakeElement(element: HTMLElement, time: number, coefficient: number): void;
+}
 export declare namespace cmon {
     function remove(key: string, cpath?: string): string;
     function assignment(key: string, val: string, options?: CookieOptions): string;
