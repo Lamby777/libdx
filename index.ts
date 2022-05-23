@@ -81,12 +81,12 @@ export namespace str {
 		return filtered.join("");
 	}
 
-	/*export function occurrences(letter:	string,
-								word:	string) {
+	export function occurrenceArray(letter:	string,
+									word:	string) {
 		return [...word].filter(
 			(v) => v === letter
-		)
-	}*/
+		);
+	}
 
 	export function occurrences(letter:	string,
 								word:	string) {
