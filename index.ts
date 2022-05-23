@@ -80,6 +80,18 @@ export namespace str {
 		
 		return filtered.join("");
 	}
+
+	/*export function occurrences(letter:	string,
+								word:	string) {
+		return [...word].filter(
+			(v) => v === letter
+		)
+	}*/
+
+	export function occurrences(letter:	string,
+								word:	string) {
+		return word.split(letter).length - 1;
+	}
 }
 
 export namespace elem {

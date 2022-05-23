@@ -1,7 +1,7 @@
 {
 	"name": "libdx",
-	"version": "1.1.1",
-	"description": "",
+	"version": "1.3.0",
+	"description": "Stuff that should be a part of JS but isn't...",
 	"main": "index.js",
 	"scripts": {
 		"tsc": "npx tsc -w",

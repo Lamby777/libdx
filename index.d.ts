@@ -14,6 +14,7 @@ export declare namespace rand {
 export declare namespace str {
     function filterStrings(str: string, filtered: string[]): string;
     function filterStringE(str: string, include: string[]): string;
+    function occurrences(letter: string, word: string): number;
 }
 export declare namespace elem {
     function shakeElement(element: HTMLElement, time: number, coefficient: number): void;
