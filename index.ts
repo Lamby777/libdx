@@ -83,8 +83,10 @@ export namespace str {
 
 	export function occurrenceArray(letter:	string,
 									word:	string) {
-		return [...word].filter(
-			(v) => v === letter
+		return [...word].map(
+			(v) => v.indexOf(letter);
+		).filter(
+			(v) => v !== -1
 		);
 	}
 
