@@ -1,4 +1,6 @@
 .breakpoints
 *.js
 !_*.js
+*.d.ts
+!_*.d.ts
 node_modules
