@@ -14,6 +14,8 @@ export declare namespace rand {
 export declare namespace str {
     function filterStrings(str: string, filtered: string[]): string;
     function filterStringE(str: string, include: string[]): string;
+    function stripRegex(input: string, regex?: RegExp): string;
+    function containsSpecials(input: string, regex?: RegExp): boolean;
     function occurrenceArray(letter: string, word: string): number[];
     function occurrences(letter: string, word: string): number;
 }

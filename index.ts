@@ -81,6 +81,18 @@ export namespace str {
 		return filtered.join("");
 	}
 
+	export function stripSpecials(input: string,
+			regex: RegExp = /[^\w]/g): string {
+		
+		return input.replace(regex, "");
+	}
+	
+	export function containsSpecials(input: string,
+			regex: RegExp = /[^\w]/g): boolean {
+		
+		return input.search(regex) !== -1;
+	}
+
 	export function occurrenceArray(letter:	string,
 									word:	string) {
 		return [...word].map(
