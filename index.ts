@@ -1,11 +1,5 @@
 "use strict";
 
-import {
-	Keyable,
-	CookieOptions
-} from "./classes";
-
-
 export namespace math {
 	export function factorial(n = 1) {
 		if (n < 1) throw new TypeError("Invalid Factorial!");
@@ -168,10 +162,10 @@ export namespace cmon {
 		return parse(cstr)[key];
 	}
 
-	export function parse(cstr: string): Keyable<string> {
+	export function parse(cstr: string): ts.Keyable<string> {
 		const split = cstr.split(";").map((v) => v.trim());
 
-		let res: Keyable<string> = {}
+		let res: ts.Keyable<string> = {}
 
 		split.forEach((v) => {
 			const kv: string[] = v.split("=");
@@ -180,4 +174,12 @@ export namespace cmon {
 		
 		return res;
 	}
+}
+
+interface CookieOptions {
+	secure?:	true;
+	strict?:	true;
+	xorigin?:	"Secure" | "Lax" | "None";
+	expiry?:	string;
+	path?:		string;
 }
