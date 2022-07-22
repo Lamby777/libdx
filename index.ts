@@ -162,10 +162,10 @@ export namespace cmon {
 		return parse(cstr)[key];
 	}
 
-	export function parse(cstr: string): ts.Keyable<string> {
+	export function parse(cstr: string): Record<string, string> {
 		const split = cstr.split(";").map((v) => v.trim());
 
-		let res: ts.Keyable<string> = {}
+		let res: Record<string, string> = {}
 
 		split.forEach((v) => {
 			const kv: string[] = v.split("=");
