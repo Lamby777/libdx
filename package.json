@@ -1,6 +1,6 @@
 {
 	"name": "libdx",
-	"version": "1.4.2",
+	"version": "1.4.3",
 	"description": "Stuff that should be a part of JS but isn't...",
 	"main": "index.js",
 	"scripts": {
