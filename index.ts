@@ -54,6 +54,10 @@ export namespace rand {
 	export function r_choice(arr: any[]) {
 		return arr[r_int(0, arr.length - 1)];
 	}
+	
+	export function r_str(len: number) {
+		return Math.random().toString(36).substring(2,len+2).toUpperCase();
+	}
 }
 
 export namespace str {
