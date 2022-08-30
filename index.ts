@@ -1,5 +1,17 @@
 "use strict";
 
+// Data structures and data types
+export namespace dman {
+	export function ptr(obj: object, prop: string, fn: () => any) {
+		// Technically not a pointer, but often used as one.
+		// Replaces an object's property with a getter of the same name
+		// such that the getter method is the one provided
+		Object.defineProperty(obj, prop, {
+			get: fn
+		});
+	}
+}
+
 export namespace math {
 	export function factorial(n = 1) {
 		if (n < 1) throw new TypeError("Invalid Factorial!");
