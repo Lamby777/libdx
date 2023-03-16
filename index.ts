@@ -192,7 +192,7 @@ export namespace cmon {
 	}
 }
 
-export function todo$() {
+export function todo$(): any {
 	throw new Error("not yet implemented");
 }
 
