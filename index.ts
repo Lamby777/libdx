@@ -192,6 +192,10 @@ export namespace cmon {
 	}
 }
 
+export function todo$() {
+	throw new Error("not yet implemented");
+}
+
 interface CookieOptions {
 	secure?:	true;
 	strict?:	true;
