@@ -64,7 +64,7 @@ export namespace rand {
 	}
 
 	export function r_choice(arr: any[]) {
-		return arr[r_int(0, arr.length - 1)];
+		return arr[r_int(0, arr.length)];
 	}
 	
 	export function r_str(len: number) {
