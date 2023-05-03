@@ -209,6 +209,11 @@ export function todo$(): any {
 	throw new Error("not yet implemented");
 }
 
+export function log$<T>(thing: T): T {
+	console.log(thing);
+	return thing;
+}
+
 interface CookieOptions {
 	secure?:	true;
 	strict?:	true;
