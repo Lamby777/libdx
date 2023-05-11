@@ -36,6 +36,10 @@ export namespace math {
 
 		return true;
 	}
+
+	export function clamp(n: number, min: number, max: number) {
+		Math.max(min, Math.min(n, max));
+	}
 }
 
 export namespace qstr {
