@@ -38,7 +38,7 @@ export namespace math {
 	}
 
 	export function clamp(n: number, min: number, max: number) {
-		Math.max(min, Math.min(n, max));
+		return Math.max(min, Math.min(n, max));
 	}
 }
 
