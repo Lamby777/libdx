@@ -1,4 +1,3 @@
-.breakpoints
 *.js
 !_*.js
 *.d.ts
