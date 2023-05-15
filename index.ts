@@ -228,6 +228,12 @@ export async function post$(url: string, body: string) {
 	});
 }
 
+export async function sleep$(delay: number) {
+	return new Promise((res, rej) =>
+		setTimeout(res, delay)
+	);
+}
+
 interface CookieOptions {
 	secure?:	true;
 	strict?:	true;
