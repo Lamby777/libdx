@@ -1,6 +1,6 @@
 {
 	"name": "libdx",
-	"version": "1.10.0",
+	"version": "1.10.1",
 	"description": "Stuff that should be a part of JS but isn't...",
 	"types": "dist/index.d.ts",
 	"main": "index.js",
