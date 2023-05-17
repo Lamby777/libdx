@@ -218,7 +218,7 @@ export function log$<T>(thing: T): T {
 	return thing;
 }
 
-export async function post$(url: string, body: string) {
+export async function post$(url: string, body: any) {
 	return fetch(url, {
 		method:	"POST",
 		body:	JSON.stringify(body),
